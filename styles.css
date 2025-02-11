@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DBE2EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+.{
+
+}
+
+.main-container img{
+    border-radius: 10px 0px 0px 10px;
+     width: 500px;
+     height: 600px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-container{
+	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	height: 600px;
+	    width: auto;
+}
+
+.container {
+    align-items: center;
+    background-color: #F9F7F7;
+    padding: 100px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px;
+    animation: slideIn 0.8s ease-out;
+}
+
+h1{
+    font-size: 35px;
+    font: bold;
+    text-align: center;
+    color: #3F72AF; /* Clinic color */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 25x;
+    font: 400;
+    text-align: center;
+    color: #3F72AF; /* Clinic color */
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Smooth transition for inputs */
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+/* Button effects */
+button {
+    background-color: #3F72AF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+}
+
+/* Link styling */
+a {
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #112D4E;
+    font-size: 13px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0112D4E;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Hidden class for switching forms */
+.hidden {
+    display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Extra animation for elements */
+.anim {
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

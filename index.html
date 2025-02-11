@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Name</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body{
+        background-image: url('https://www.pngarts.com/files/11/Healthy-Tooth-PNG-Free-Download.png');
+        background-repeat: no-repeat;
+        background-size: 1250px;
+        background-position: right;
+        background-blend-mode:color-burn;
+    }
+</style>
+<body>
+        <div class="main-container">
+            <img src="BG NA.jpg">
+            <div class="container">
+                <h1>Welcome!</h1>
+                <h2>Baldosano Dental Clinic</h2>
+        
+                <!-- Login Form -->
+                <div id="login-form" class="form-container">
+                    <input type="text" id="login-username" placeholder="Username">
+                    <input type="password" id="login-password" placeholder="Password">
+                    <p class="error" id="login-error"></p>
+                    <button onclick="handleLogin()">Login</button>
+                    <a href="#" onclick="showForm('signup-form')">Create New Account</a>
+                    <a href="#" onclick="showForm('forgot-form')">Forgot Password?</a>
+                </div>
+        
+                <!-- Signup Form -->
+                <div id="signup-form" class="form-container hidden">
+                    <input type="text" id="signup-name" placeholder="Full Name">
+                    <input type="text" id="signup-username" placeholder="Username">
+                    <input type="password" id="signup-password" placeholder="Password">
+                    <p class="error" id="signup-error"></p>
+                    <button onclick="handleSignup()">Sign Up</button>
+                    <a href="#" onclick="showForm('login-form')">Back to Login</a>
+                </div>
+        
+                <!-- Forgot Password Form -->
+                <div id="forgot-form" class="form-container hidden">
+                    <input type="text" id="forgot-username" placeholder="Enter your username">
+                    <button onclick="verifyUser()">Next</button>
+                    <a href="#" onclick="showForm('login-form')">Back to Login</a>
+                </div>
+        
+                <!-- Reset Password Form -->
+                <div id="reset-form" class="form-container hidden">
+                    <input type="password" id="new-password" placeholder="Enter new password">
+                    <input type="password" id="confirm-password" placeholder="Confirm new password">
+                    <p class="error" id="reset-error"></p>
+                    <button onclick="handleResetPassword()">Reset Password</button>
+                </div>
+            </div>    
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
